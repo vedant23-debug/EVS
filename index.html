@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WaterSafe Campus — Drinking Water Safety Awareness &amp; Reporting</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">💧 WaterSafe Campus</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#report" class="nav-link">Report Problem</a></li>
+      <li><a href="#safety" class="nav-link">Water Safety</a></li>
+      <li><a href="#quiz" class="nav-link">Quiz</a></li>
+      <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HOME ============ -->
+<section id="home" class="section hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1 class="hero-title">WaterSafe Campus</h1>
+      <p class="hero-subtitle">Technology for safer drinking water and a more aware campus.</p>
+      <p class="hero-desc">Report problems at campus drinking-water points and learn how drinking-water safety can be protected.</p>
+      <div class="hero-actions">
+        <a href="#report" class="btn btn-primary">Report a Water Problem</a>
+        <a href="#safety" class="btn btn-outline">Learn About Water Safety</a>
+      </div>
+    </div>
+    <div class="hero-graphic" aria-hidden="true">
+      <div class="station">
+        <div class="station-screen">
+          <span class="station-screen-label">Water Point</span>
+          <span class="station-screen-value">WP-07</span>
+        </div>
+        <div class="station-spout"></div>
+        <div class="station-basin"></div>
+        <div class="station-qr">
+          <div class="qr-grid">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <span class="station-qr-label">scan → report</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg class="wave-divider" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,40 C240,80 480,0 720,30 C960,60 1200,10 1440,40 L1440,80 L0,80 Z"></path>
+  </svg>
+
+  <div class="container">
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-icon">🚨</span>
+        <h3>Report</h3>
+        <p>Quickly report problems at campus drinking-water points.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📚</span>
+        <h3>Learn</h3>
+        <p>Understand drinking-water safety, contamination, testing and safe practices.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-icon">📊</span>
+        <h3>Monitor</h3>
+        <p>Visualize reported problems and their status using prototype campus data.</p>
+      </div>
+    </div>
+
+    <div class="how-it-works">
+      <h2>How WaterSafe works</h2>
+      <ol class="steps">
+        <li class="step"><span class="step-num">1</span><div><h4>Scan the QR code</h4><p>Each water point has a code linking directly to its report form.</p></div></li>
+        <li class="step"><span class="step-num">2</span><div><h4>Report the issue</h4><p>Select what's wrong and add a description or photo.</p></div></li>
+        <li class="step"><span class="step-num">3</span><div><h4>The report is recorded</h4><p>The report is saved with an ID and a pending status.</p></div></li>
+        <li class="step"><span class="step-num">4</span><div><h4>The issue can be reviewed</h4><p>Reports appear on the dashboard for follow-up.</p></div></li>
+        <li class="step"><span class="step-num">5</span><div><h4>Students learn as they go</h4><p>The Water Safety section builds awareness alongside reporting.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REPORT ============ -->
+<section id="report" class="section section-alt">
+  <div class="container">
+    <h2>Report a water-point problem</h2>
+    <p class="section-intro">Help us identify problems with drinking-water facilities around campus.</p>
+
+    <div class="wp-overview">
+      <p class="wp-overview-note">Prototype/demo locations — replace with actual university locations if required.</p>
+      <div class="wp-chip-grid">
+        <span class="wp-chip">WP-01 — Main Academic Block</span>
+        <span class="wp-chip">WP-02 — Library</span>
+        <span class="wp-chip">WP-03 — Hostel Block A</span>
+        <span class="wp-chip">WP-04 — Hostel Block B</span>
+        <span class="wp-chip">WP-05 — Engineering Block</span>
+        <span class="wp-chip">WP-06 — Science Block</span>
+        <span class="wp-chip">WP-07 — Student Centre</span>
+        <span class="wp-chip">WP-08 — Sports Complex</span>
+        <span class="wp-chip">WP-09 — Cafeteria Area</span>
+        <span class="wp-chip">WP-10 — Administrative Block</span>
+        <span class="wp-chip">WP-11 — Central Campus</span>
+      </div>
+    </div>
+
+    <div class="report-card">
+      <div id="qr-banner" class="qr-banner hidden">
+        <span>📍 Reporting for: <strong id="qr-banner-text"></strong></span>
+        <button type="button" id="qr-banner-clear" class="link-btn">Not this location? Choose manually</button>
+      </div>
+
+      <form id="report-form" novalidate>
+        <div class="form-group">
+          <label for="water-point">Water point</label>
+          <select id="water-point" name="water-point">
+            <option value="">-- Select a water point --</option>
+            <option value="01">WP-01 — Main Academic Block</option>
+            <option value="02">WP-02 — Library</option>
+            <option value="03">WP-03 — Hostel Block A</option>
+            <option value="04">WP-04 — Hostel Block B</option>
+            <option value="05">WP-05 — Engineering Block</option>
+            <option value="06">WP-06 — Science Block</option>
+            <option value="07">WP-07 — Student Centre</option>
+            <option value="08">WP-08 — Sports Complex</option>
+            <option value="09">WP-09 — Cafeteria Area</option>
+            <option value="10">WP-10 — Administrative Block</option>
+            <option value="11">WP-11 — Central Campus</option>
+          </select>
+        </div>
+
+        <fieldset class="form-group">
+          <legend>What did you notice? (select all that apply)</legend>
+          <div class="checkbox-grid">
+            <label class="checkbox"><input type="checkbox" name="issue" value="Unusual taste"> Unusual taste</label>
+            <label class="checkbox"><input type="checkbox" name="issue" value="Unusual smell"> Unusual smell</label>
+            <label class="checkbox"><input type="checkbox" name="issue" value="Unusual appearance/color"> Unusual appearance/color</label>
+            <label class="checkbox"><input type="checkbox" name="issue" value="Cloudy water"> Cloudy water</label>
+            <label class="checkbox"><input type="checkbox" name="issue" value="Broken tap"> Broken tap</label>
+            <label class="checkbox"><input type="checkbox" name="issue" value="Water leakage"> Water leakage</label>
+            <label class="checkbox"><input type="checkbox" name="issue" value="Dirty dispenser"> Dirty dispenser</label>
+            <label class="checkbox"><input type="checkbox" name="issue" value="Surrounding area is unclean"> Surrounding area is unclean</label>
+            <label class="checkbox"><input type="checkbox" name="issue" value="No/low water flow"> No/low water flow</label>
+            <label class="checkbox"><input type="checkbox" name="issue" value="Water unavailable"> Water unavailable</label>
+            <label class="checkbox"><input type="checkbox" id="issue-other" name="issue" value="Other"> Other</label>
+          </div>
+          <div id="other-text-wrap" class="form-group hidden">
+            <label for="other-text">Please describe the other issue</label>
+            <input type="text" id="other-text" name="other-text" maxlength="120">
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="description">Describe the problem (optional)</label>
+          <textarea id="description" name="description" rows="4" maxlength="500" placeholder="Add any extra detail that could help, e.g. when you noticed it."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="photo">Upload a photo (optional)</label>
+          <input type="file" id="photo" name="photo" accept="image/*">
+          <div id="photo-preview-wrap" class="photo-preview-wrap hidden">
+            <img id="photo-preview" alt="Selected photo preview">
+            <button type="button" id="photo-remove" class="link-btn">Remove photo</button>
+          </div>
+          <p id="photo-error" class="field-error hidden">Please choose an image file.</p>
+        </div>
+
+        <p class="prototype-note">This is a prototype. Reports are stored only in this browser and are not sent to university authorities.</p>
+
+        <div id="form-errors" class="form-errors hidden" aria-live="polite"></div>
+
+        <button type="submit" class="btn btn-primary">Submit Report</button>
+      </form>
+
+      <div id="success-card" class="success-card hidden" aria-live="polite">
+        <h3>✓ Report submitted</h3>
+        <dl class="success-details">
+          <dt>Report ID</dt><dd id="success-id"></dd>
+          <dt>Water point</dt><dd id="success-point"></dd>
+          <dt>Issue</dt><dd id="success-issue"></dd>
+          <dt>Status</dt><dd id="success-status">Pending Review</dd>
+        </dl>
+        <p>Thank you for helping improve campus drinking-water awareness and maintenance.</p>
+        <button type="button" id="submit-another" class="btn btn-outline">Submit another report</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WATER SAFETY ============ -->
+<section id="safety" class="section">
+  <div class="container prose-container">
+    <h2>Drinking water safety</h2>
+
+    <h3>Why water safety matters</h3>
+    <p>Safe drinking water is one of the most basic requirements for staying healthy, yet water that looks, smells and tastes normal is not automatically safe. Many contaminants, including several disease-causing microorganisms and dissolved chemicals, cannot be detected by the human senses at all. This is why routine monitoring and appropriate testing matter more than a visual check — appearance alone cannot confirm that water is safe to drink. Clean storage and careful handling between the source and the point of use are just as important, since water can become contaminated after it has already been treated.</p>
+
+    <h3>How water can become contaminated</h3>
+    <ul class="pathway-list">
+      <li><strong>Contamination at the source</strong> — the source itself (a borewell, tank or supply line) may pick up contaminants from the surrounding soil, runoff or nearby waste.</li>
+      <li><strong>Poor storage</strong> — open or poorly sealed storage tanks allow dust, insects and microorganisms to enter over time.</li>
+      <li><strong>Dirty containers</strong> — jugs, bottles or dispenser reservoirs that aren't cleaned regularly can reintroduce contamination into otherwise treated water.</li>
+      <li><strong>Poor handling</strong> — touching the inside of a container or tap outlet, or using unwashed hands, can transfer microorganisms into the water.</li>
+      <li><strong>Damaged infrastructure</strong> — cracked pipes, corroded fittings or broken taps can let contaminants in or let treated water leak out before it's used.</li>
+      <li><strong>Environmental contamination</strong> — nearby construction, flooding or poor drainage around a water point can introduce contaminants close to the point of use.</li>
+    </ul>
+
+    <h3>Types of contaminants</h3>
+    <div class="contaminant-grid">
+      <div class="contaminant-card">
+        <h4>Microbiological contaminants</h4>
+        <p>Living organisms that can cause illness, usually linked to contamination from human or animal waste.</p>
+        <dl>
+          <dt>Bacteria</dt>
+          <dd>Can enter water through contact with sewage or animal waste; monitoring for indicator bacteria is a standard way to flag this risk.</dd>
+          <dt>Viruses</dt>
+          <dd>Often enter through similar routes as bacteria and can survive in water for extended periods, so they're a reason source protection matters.</dd>
+          <dt>Parasites</dt>
+          <dd>Organisms such as protozoa can be resistant to some standard disinfection methods, which is part of why layered safeguards (source, treatment and storage) matter.</dd>
+        </dl>
+      </div>
+      <div class="contaminant-card">
+        <h4>Chemical contaminants</h4>
+        <p>Dissolved substances that can come from geology, agriculture, industry or plumbing, and that build up gradually rather than causing sudden, visible change.</p>
+        <dl>
+          <dt>Arsenic</dt>
+          <dd>Occurs naturally in some groundwater from surrounding rock and soil; the World Health Organization's guideline value is 0.01 mg/L, and it is odourless and tasteless, so it can only be confirmed by testing.</dd>
+          <dt>Fluoride</dt>
+          <dd>Present naturally in many water sources; the WHO guideline value is 1.5 mg/L. Small amounts can support dental health, but higher concentrations over long-term use are a monitoring concern.</dd>
+          <dt>Nitrate</dt>
+          <dd>Commonly linked to agricultural fertiliser runoff or leaking sewage reaching a water source; the WHO guideline value is 50 mg/L.</dd>
+          <dt>Lead</dt>
+          <dd>Usually enters water from ageing pipes, solder or fittings rather than the source itself; the WHO guideline value is 0.01 mg/L.</dd>
+        </dl>
+      </div>
+    </div>
+
+    <h3>Water quality parameters</h3>
+    <p class="section-intro">Each parameter below tells us something useful, but none of them can prove on its own that water is completely safe to drink. Select a parameter to expand it.</p>
+    <div class="accordion">
+      <details class="accordion-item">
+        <summary>pH</summary>
+        <p><strong>What it measures:</strong> how acidic or alkaline the water is.</p>
+        <p><strong>Why it matters:</strong> pH affects how corrosive water is to pipes and how well disinfection works. The WHO has not set a health-based guideline value for pH, though many standards recommend a working range of roughly 6.5–8.5 for taste and system performance.</p>
+        <p><strong>What it doesn't tell us:</strong> a "normal" pH reading says nothing about whether harmful bacteria or specific chemical contaminants are present.</p>
+      </details>
+      <details class="accordion-item">
+        <summary>Turbidity</summary>
+        <p><strong>What it measures:</strong> how cloudy the water is, caused by suspended particles.</p>
+        <p><strong>Why it matters:</strong> high turbidity can shield microorganisms from disinfection and often signals a problem upstream, such as disturbed sediment or a treatment issue.</p>
+        <p><strong>What it doesn't tell us:</strong> clear water can still carry dissolved chemical contaminants or pathogens that don't create visible cloudiness.</p>
+      </details>
+      <details class="accordion-item">
+        <summary>TDS (Total Dissolved Solids)</summary>
+        <p><strong>What it measures:</strong> the combined concentration of dissolved minerals and salts in the water.</p>
+        <p><strong>Why it matters:</strong> very high TDS can affect taste and may hint at a source or treatment issue worth investigating. The WHO has not proposed a health-based guideline value for TDS.</p>
+        <p><strong>What it doesn't tell us:</strong> TDS is a general measure — it does not identify which specific substances are dissolved, so a low reading does not rule out a specific contaminant of concern.</p>
+      </details>
+      <details class="accordion-item">
+        <summary>Hardness</summary>
+        <p><strong>What it measures:</strong> the concentration of dissolved calcium and magnesium.</p>
+        <p><strong>Why it matters:</strong> hardness mainly affects taste, scaling in pipes and how well soap lathers; it's largely an aesthetic and operational parameter rather than a direct health measure.</p>
+        <p><strong>What it doesn't tell us:</strong> hardness has no bearing on whether the water is microbiologically safe.</p>
+      </details>
+      <details class="accordion-item">
+        <summary>Microbiological indicators</summary>
+        <p><strong>What it measures:</strong> the presence of indicator organisms, most commonly <em>E. coli</em> or other coliform bacteria, used as a proxy for faecal contamination.</p>
+        <p><strong>Why it matters:</strong> because testing for every possible pathogen individually isn't practical, indicator organisms give a reliable early warning that contamination from waste may be present.</p>
+        <p><strong>What it doesn't tell us:</strong> a clean indicator result reduces risk but does not guarantee the complete absence of every possible chemical or biological contaminant.</p>
+      </details>
+    </div>
+
+    <h3>Safe water storage and handling</h3>
+    <ul class="tip-list">
+      <li>Keep storage containers and dispenser reservoirs clean and covered.</li>
+      <li>Keep drinking water covered between the source and the point of use.</li>
+      <li>Avoid touching drinking-water contact surfaces, such as tap outlets or the inside of lids, unnecessarily.</li>
+      <li>Wash hands before handling containers, filters or dispensers.</li>
+      <li>Keep the surrounding area of a water point clean and free of standing water or waste.</li>
+      <li>Seek appropriate testing when there is a specific concern, rather than relying on taste or appearance.</li>
+    </ul>
+
+    <h3>What to do if you notice a problem</h3>
+    <ol class="flow-steps">
+      <li>Notice a problem</li>
+      <li>Identify the water point</li>
+      <li>Report the issue</li>
+      <li>Avoid making assumptions based only on appearance or taste</li>
+      <li>Seek appropriate testing or authority assistance when necessary</li>
+    </ol>
+
+    <h3 id="references">References</h3>
+    <ul class="reference-list">
+      <li><a href="https://www.who.int/news-room/fact-sheets/detail/drinking-water" target="_blank" rel="noopener">World Health Organization — Drinking-water fact sheet</a></li>
+      <li><a href="https://www.who.int/teams/environment-climate-change-and-health/water-sanitation-and-health/water-safety-and-quality/drinking-water-quality-guidelines" target="_blank" rel="noopener">World Health Organization — Guidelines for Drinking-water Quality</a></li>
+      <li><a href="https://www.cdc.gov/healthy-water/about/index.html" target="_blank" rel="noopener">U.S. CDC — Healthy Water</a></li>
+      <li><a href="https://www.epa.gov/ground-water-and-drinking-water" target="_blank" rel="noopener">U.S. EPA — Ground Water and Drinking Water</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section id="quiz" class="section section-alt">
+  <div class="container">
+    <h2>Water safety awareness quiz</h2>
+    <p class="section-intro">Answer all the questions, then check your awareness score.</p>
+
+    <form id="quiz-form" class="quiz-form">
+      <!-- Quiz questions are rendered here by script.js -->
+      <div id="quiz-questions"></div>
+
+      <div id="quiz-error" class="form-errors hidden" aria-live="polite">Please answer every question before checking your score.</div>
+
+      <button type="submit" class="btn btn-primary" id="quiz-submit">Check my score</button>
+    </form>
+
+    <div id="quiz-result" class="quiz-result hidden" aria-live="polite">
+      <p class="quiz-score-label">Water Safety Awareness Score</p>
+      <p class="quiz-score" id="quiz-score">0/10</p>
+      <p id="quiz-message"></p>
+      <button type="button" id="quiz-retake" class="btn btn-outline">Retake quiz</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DASHBOARD ============ -->
+<section id="dashboard" class="section">
+  <div class="container">
+    <h2>Campus water safety dashboard</h2>
+    <p class="prototype-banner">Prototype demonstration data — not real university statistics.</p>
+
+    <div class="stat-grid">
+      <div class="stat-card"><span class="stat-value">11</span><span class="stat-label">Total water points</span></div>
+      <div class="stat-card"><span class="stat-value">24</span><span class="stat-label">Reports received</span></div>
+      <div class="stat-card stat-amber"><span class="stat-value">6</span><span class="stat-label">Pending</span></div>
+      <div class="stat-card stat-amber"><span class="stat-value">5</span><span class="stat-label">Under review</span></div>
+      <div class="stat-card stat-green"><span class="stat-value">13</span><span class="stat-label">Resolved</span></div>
+    </div>
+
+    <div class="dash-grid">
+      <div class="dash-panel">
+        <h3>Issue categories <span class="sample-tag">sample data</span></h3>
+        <div class="bar-chart">
+          <div class="bar-row"><span class="bar-label">Unclean surroundings</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-count">7</span></div>
+          <div class="bar-row"><span class="bar-label">Broken tap</span><div class="bar-track"><div class="bar-fill" style="width:86%"></div></div><span class="bar-count">6</span></div>
+          <div class="bar-row"><span class="bar-label">Unusual appearance</span><div class="bar-track"><div class="bar-fill" style="width:71%"></div></div><span class="bar-count">5</span></div>
+          <div class="bar-row"><span class="bar-label">Water availability</span><div class="bar-track"><div class="bar-fill" style="width:57%"></div></div><span class="bar-count">4</span></div>
+          <div class="bar-row"><span class="bar-label">Taste / smell</span><div class="bar-track"><div class="bar-fill" style="width:43%"></div></div><span class="bar-count">3</span></div>
+          <div class="bar-row"><span class="bar-label">Other</span><div class="bar-track"><div class="bar-fill" style="width:29%"></div></div><span class="bar-count">2</span></div>
+        </div>
+      </div>
+
+      <div class="dash-panel">
+        <h3>Water point status <span class="sample-tag">sample data</span></h3>
+        <ul class="status-list">
+          <li><span class="dot dot-green"></span> WP-01 — Normal</li>
+          <li><span class="dot dot-amber"></span> WP-02 — Reports received</li>
+          <li><span class="dot dot-green"></span> WP-03 — Normal</li>
+          <li><span class="dot dot-red"></span> WP-04 — Needs attention</li>
+          <li><span class="dot dot-green"></span> WP-05 — Normal</li>
+          <li><span class="dot dot-amber"></span> WP-06 — Reports received</li>
+          <li><span class="dot dot-green"></span> WP-07 — Normal</li>
+          <li><span class="dot dot-green"></span> WP-08 — Normal</li>
+          <li><span class="dot dot-amber"></span> WP-09 — Reports received</li>
+          <li><span class="dot dot-green"></span> WP-10 — Normal</li>
+          <li><span class="dot dot-green"></span> WP-11 — Normal</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dash-panel reports-panel">
+      <div class="reports-panel-head">
+        <h3>Reports submitted in this browser</h3>
+        <button type="button" id="reset-demo" class="link-btn link-btn-danger">Reset demo data</button>
+      </div>
+      <input type="search" id="report-search" placeholder="Search by water point or issue…" aria-label="Search submitted reports">
+      <div id="reports-list" class="reports-list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section section-alt">
+  <div class="container prose-container">
+    <h2>About WaterSafe Campus</h2>
+    <dl class="about-meta">
+      <dt>Project</dt><dd>WaterSafe Campus</dd>
+      <dt>Topic</dt><dd>Drinking water safety awareness through technology</dd>
+      <dt>Purpose</dt><dd>To demonstrate how digital technology can connect drinking-water awareness with reporting of problems at campus water points.</dd>
+    </dl>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h4>Problem</h4>
+        <p>Problems at campus drinking-water points — broken taps, unclean surroundings, unusual taste or smell — often go unreported because there's no quick, obvious way to flag them.</p>
+      </div>
+      <div class="about-card">
+        <h4>Solution</h4>
+        <p>A simple QR-linked reporting page at each water point, paired with clear educational content, so noticing a problem and reporting it takes under a minute.</p>
+      </div>
+      <div class="about-card">
+        <h4>Technology used</h4>
+        <p>HTML5, CSS3 and vanilla JavaScript, with browser localStorage standing in for a real backend in this prototype.</p>
+      </div>
+      <div class="about-card">
+        <h4>Expected impact</h4>
+        <p>Faster awareness of water-point issues, and a more informed student body when it comes to basic drinking-water safety concepts.</p>
+      </div>
+    </div>
+    <p class="prototype-note">Developed as an Environmental Studies academic prototype.</p>
+  </div>
+</section>
+
+<!-- ============ QR DEMO ============ -->
+<section id="qrdemo" class="section">
+  <div class="container">
+    <h2>QR code water-point demonstration</h2>
+    <p class="section-intro">In a real deployment, each card below would be a printed QR code at that water point. Click one to simulate a scan — it opens the report form with that location already selected.</p>
+    <div class="qr-demo-grid">
+      <a class="qr-demo-card" href="?point=01#report">
+        <span class="qr-demo-graphic"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        <span class="qr-demo-label">QR → WP-01</span>
+        <span class="qr-demo-url">index.html?point=01</span>
+      </a>
+      <a class="qr-demo-card" href="?point=02#report">
+        <span class="qr-demo-graphic"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        <span class="qr-demo-label">QR → WP-02</span>
+        <span class="qr-demo-url">index.html?point=02</span>
+      </a>
+      <a class="qr-demo-card" href="?point=03#report">
+        <span class="qr-demo-graphic"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        <span class="qr-demo-label">QR → WP-03</span>
+        <span class="qr-demo-url">index.html?point=03</span>
+      </a>
+      <a class="qr-demo-card" href="?point=07#report">
+        <span class="qr-demo-graphic"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        <span class="qr-demo-label">QR → WP-07</span>
+        <span class="qr-demo-url">index.html?point=07</span>
+      </a>
+      <a class="qr-demo-card" href="?point=11#report">
+        <span class="qr-demo-graphic"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        <span class="qr-demo-label">QR → WP-11</span>
+        <span class="qr-demo-url">index.html?point=11</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>WaterSafe Campus — Environmental Studies academic prototype. Reports are stored only in this browser and are not sent to any university authority.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
